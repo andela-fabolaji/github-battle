@@ -1,0 +1,159 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: Arial
+}
+
+.main {
+  width: 100%;
+}
+
+.navigation {
+  border-bottom: 1px solid #f2f2f2;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.navigation li a {
+  color: black;
+  display: block;
+  height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+
+.navigation li a:hover {
+  color: white;
+  background: #008FFD;
+}
+
+.navigation li a:active {
+  background: #008FFD;
+}
+
+.popular {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular li {
+  color: black;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: .6rem;
+}
+
+.popular li:hover {
+  color: #008FFD;
+  border-bottom: 1px solid #008FFD;
+}
+
+.popular-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.repo-list-item {
+  margin: 20px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.repo-list-item:hover {
+  box-shadow: 0 6px 16px 1px rgba(0,0,0,0.14);
+  border-color: white;
+}
+
+.repo-list-item li {
+  display: block;
+  float: none;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/** battle **/
+
+.battle-container {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  align-items: center;
+}
+
+.battle-container > div {
+  width: 50%;
+  text-align: center;
+}
+
+/** form components **/
+.tbox {
+  height: 40px;
+  width: 250px;
+  background: #f2f2f2;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.tbox:focus {
+  background: #008FFD;
+  color: white;
+}
+
+.btn {
+  height: 40px;
+  width: 100px;
+  background: #f2f2f2;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+.btn:hover {
+  background: #008FFD;
+  color: white;
+}
