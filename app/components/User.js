@@ -9,7 +9,7 @@ class User extends Component {
     this.details = this.props.details;
   }
 
-  render () {
+  render() {
     return (
       <div>
         <h2>{this.details.name}</h2>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Loading from './shared/loading';
+import Loading from './shared/Loading';
 import api from '../utils/api';
 
 const SelectLanguage = props => {
@@ -83,11 +83,11 @@ class Popular extends Component {
 
     api.fetchPopularRepos(lang, this)
       .then((repos) => {
-        this.setState({ repos });
+        this.setState({ repos: repos.items });
       });
   }
 
-  render () {
+  render() {
     const languages = ['all', 'javascript', 'python', 'ruby', 'php'];
     const repos = this.state.repos;
 
